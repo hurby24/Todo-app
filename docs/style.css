@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #3D3D3D;
+    background: #ECFDAA;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 65px 15%;
+}
+
+.content{
+    width: 100%;
+    min-width: 350px;
+    min-height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 12px;
+
+    background: #E9E3E6;
+    border: 4px solid #3D3D3D;
+    box-shadow: 4px 4px 0px #3D3D3D;
+}
+
+.top-text{
+    width: 100%;
+    height: 70px;
+    background: #6BE0F3;
+    border: 4px solid #3D3D3D;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+form {
+    width: 100%;
+}
+.input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+.input-field {
+    width: 100%;
+    height: 50px;
+
+    background: #D9D9D9;
+    border: 4px solid #3D3D3D;
+    outline: 0;
+    padding: 0 16px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #3D3D3D;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+    width: 120px;
+    height: 50px;
+    background: #80FFBA;
+    border: 4px solid #3D3D3D;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #3D3D3D;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover{
+    background: #3D3D3D;
+    color: #80FFBA;
+}
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+    list-style: none;
+    margin-top: 15px;
+}
+.todo-list-item {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #E9E3E6;
+    border: 4px solid #3D3D3D;
+    padding: 8px 0 8px 16px;
+}
+.todo-list-item-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+todo-list-item-text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.todo-list-item-content-btn {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.finish{
+    background: #80FFBA;
+    border: 4px solid #3D3D3D;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.delete{
+    background: #FC708D;
+    border: none;
+    border-top: 4px  solid #3D3D3D;
+    border-bottom: 4px  solid #3D3D3D;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.icon {
+    font-size: 28px;
+    color: #3D3D3D;
+    pointer-events: none;
+}
+
+/* load animations */
+.scale-up-center{animation:scale-up-center 0.4s; } @keyframes scale-up-center{ 0%{transform:scale(.5)} 100%{transform:scale(1)} }
+.scale-up-center-delay{animation:scale-up-center 0.7s; } @keyframes scale-up-center{ 0%{transform:scale(.5)} 100%{transform:scale(1)} }
